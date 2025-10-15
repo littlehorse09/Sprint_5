@@ -1,5 +1,5 @@
 import com.example.LionAlex;
-import com.example.Predator;
+import com.example.Feline;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ public class LionAlexTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        Predator simplePredator = new Predator() {
+        Feline simplePredator = new Feline() {
             @Override
             public List<String> eatMeat() {
                 return Arrays.asList("Животные", "Птицы", "Рыба");
@@ -47,7 +47,7 @@ public class LionAlexTest {
     @Test
     public void GetFoodPredatorFoodList() throws Exception {
         List<String> expectedFood = Arrays.asList("Животные", "Птицы", "Рыба");
-        Predator simplePredator = new Predator() {
+        Feline simplePredator = new Feline() {
             @Override
             public List<String> eatMeat() {
                 return expectedFood;
